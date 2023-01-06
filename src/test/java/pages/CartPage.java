@@ -14,7 +14,7 @@ public class CartPage extends BasePage {
     }
     @FindBy(id = "shopping_cart_container")
     private WebElement cart;
-    @FindBy(name = "Sauce Labs Backpack")
+    @FindBy(xpath = "//div[@class='inventory_item_name']")
     private WebElement backpackName;
 
     public void checkThatWeHaveBackpack(){

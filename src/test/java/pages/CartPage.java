@@ -1,5 +1,6 @@
 package pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,9 +12,14 @@ public class CartPage extends BasePage {
         super(driver);
         PageFactory.initElements(driver,this);
     }
-
     @FindBy(id = "shopping_cart_container")
     private WebElement cart;
+    @FindBy(name = "Sauce Labs Backpack")
+    private WebElement backpackName;
+
+    public void checkThatWeHaveBackpack(){
+        Assert.assertTrue(backpackName.isDisplayed());
+    }
     public void clickOnCart() {
         cart.click();
     }

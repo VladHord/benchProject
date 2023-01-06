@@ -56,6 +56,6 @@ public class SauceSwagSteps {
 
     @Then("Check that we have backpack in the cart")
     public void check_that_we_have_backpack_in_the_cart() {
-
+        cartPage.checkThatWeHaveBackpack();
     }
 }

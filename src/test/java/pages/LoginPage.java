@@ -36,7 +36,6 @@ public class LoginPage extends BasePage {
 
     public void openHomePage() {
         driver.get(homePage);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
 

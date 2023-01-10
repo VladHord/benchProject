@@ -4,14 +4,12 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
 
 public class SetUp {
 
     private WebDriver driver;
-    @BeforeTest
     private void setWebDriver() {
         String browser = "chrome";
         String projectPath = System.getProperty("user.dir");
